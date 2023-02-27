@@ -1,0 +1,57 @@
+﻿@model EmployeeLocatorFrontEnd.Views.ViewModels.EngineerViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Engineer</h4>
+<hr />
+<div class="row">
+    <div class="form-group">
+        <form asp-action="Edit">
+            @Html.HiddenFor(m => m.Engineer.Id)
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.Engineer.FirstName" class="control-label"></label>
+                <input asp-for="@Model.Engineer.FirstName" class="form-control" />
+                <span asp-validation-for="@Model.Engineer.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Engineer.LastName" class="control-label"></label>
+                <input asp-for="@Model.Engineer.LastName" class="form-control" />
+                <span asp-validation-for="@Model.Engineer.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Engineer.LastKnownLocation" class="control-label"></label>
+                @Html.DropDownListFor(m => m.Locations.SelectedValue, Model.Locations.Options, null,new { @class = "form-control"  })
+                <span asp-validation-for="@Model.Engineer.LastKnownLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Engineer.EmployeeStatus" class="control-label"></label>
+                @Html.DropDownListFor(m => m.EmployeeStatus.SelectedValue, Model.EmployeeStatus.Options, null, new { @class = "form-control"  })
+                <span asp-validation-for="@Model.Engineer.EmployeeStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Engineer.HireDate" class="control-label"></label>
+                <input asp-for="@Model.Engineer.HireDate" class="form-control" />
+                <span asp-validation-for="@Model.Engineer.HireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

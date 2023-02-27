@@ -1,0 +1,17 @@
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\Persistence.deps.json
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\Persistence.dll
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\ref\Persistence.dll
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\Persistence.pdb
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\Domain.dll
+C:\Dev\Lumaverse\Lumaverse\Persistence\bin\Debug\net6.0\Domain.pdb
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.dll
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.pdb
+C:\Dev\Lumaverse\Lumaverse\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
