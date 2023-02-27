@@ -24,8 +24,7 @@ namespace EmployeeLocatorFrontEnd.Controllers
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
-
-
+            ViewBag.StatusSortParm = sortOrder == "Status" ? "status_desc" : "Status";
 
             List<Engineer> engineers = new List<Engineer>();
             using (var httpClient = new HttpClient())
@@ -40,11 +39,17 @@ namespace EmployeeLocatorFrontEnd.Controllers
                         case "name_desc":
                             engineers = engineers.OrderByDescending(e => e.LastName).ToList();
                             break;
-                        case "hire_date":
+                        case "Date":
                             engineers = engineers.OrderBy(e => e.HireDate).ToList();
                             break;
-                        case "hire_date_desc":
+                        case "date_desc":
                             engineers = engineers.OrderByDescending(e => e.HireDate).ToList();
+                            break;
+                        case "status_desc":
+                            engineers = engineers.OrderByDescending(e => e.EmployeeStatus).ToList();
+                            break;
+                        case "Status":
+                            engineers = engineers.OrderBy(e => e.EmployeeStatus).ToList();
                             break;
                         default:
                             engineers = engineers.OrderBy(e => e.LastName).ToList();
