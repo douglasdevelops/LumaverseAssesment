@@ -8,7 +8,6 @@ namespace Application.Interfaces
     {
         DbSet<Engineer> Engineers { get; set; }
         DbSet<Location> Locations { get; set; }
-        DbSet<Manager> Managers { get; set; }
 
         Task<int> SaveChanges();
         Task<int> SaveChangesAsync();

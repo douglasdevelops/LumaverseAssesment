@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain
@@ -15,7 +16,8 @@ namespace Domain
         [DisplayName("Employee Status")]
         public EmployeeStatus EmployeeStatus { get; set; } = EmployeeStatus.Other;
         [DisplayName("Date Of Hire")]
-        public DateTime HireDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime HireDate { get; set; } = DateTime.Now;
     }
 
     public class Engineer : Employee, IShouldBeTracked
@@ -27,12 +29,4 @@ namespace Domain
         [DisplayName("Last Known Location")]
         public Location? LastKnownLocation { get; set; }
     }
-
-    public class Manager: Employee
-    {
-        [DisplayName("Number of Direct Reports")]
-        public int NumberOfDirectReports { get; set; }
-    }
-
-    
 }
