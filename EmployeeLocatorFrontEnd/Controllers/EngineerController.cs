@@ -58,7 +58,7 @@ namespace EmployeeLocatorFrontEnd.Controllers
 
                     foreach (var item in engineers)
                     {
-                        using (var locationResp = await httpClient.GetAsync($"{BaseAPIUrl}/Location/{item.Id}"))
+                        using (var locationResp = await httpClient.GetAsync($"{BaseAPIUrl}/Location/{item.LastKnownLocationId}"))
                         {
                             apiResponse = await locationResp.Content.ReadAsStringAsync();
                             var locationForEngineer = JsonConvert.DeserializeObject<Location>(apiResponse);
