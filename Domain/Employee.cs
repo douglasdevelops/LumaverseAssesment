@@ -27,12 +27,4 @@ namespace Domain
         [DisplayName("Last Known Location")]
         public Location? LastKnownLocation { get; set; }
     }
-
-    public class Manager: Employee
-    {
-        [DisplayName("Number of Direct Reports")]
-        public int NumberOfDirectReports { get; set; }
-    }
-
-    
 }

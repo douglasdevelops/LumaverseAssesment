@@ -17,72 +17,52 @@ namespace Persistence
                 {
                     State = "New York",
                     City = "New York",
-                    Latitude = 0,
-                    Longitude = 0,
 
                 },
                 new Location
                 {
                     State = "Illinois",
                     City = "Chicago",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "Florida",
                     City = "Miami",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "California",
                     City = "Los Angeles",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "Arizona",
                     City = "Phoenix",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "Texas",
                     City = "Dallas",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "Texas",
                     City = "Houston",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "North Carolina",
                     City = "Charlotte",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "Vermont",
                     City = "Burlington",
-                    Latitude = 0,
-                    Longitude = 0,
                 },
                 new Location
                 {
                     State = "West Virginia",
                     City = "Charleston",
-                    Latitude = 0,
-                    Longitude = 0,
                 }
             };
 

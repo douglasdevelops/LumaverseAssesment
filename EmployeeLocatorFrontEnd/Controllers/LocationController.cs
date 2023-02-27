@@ -133,10 +133,8 @@ namespace EmployeeLocatorFrontEnd.Controllers
             var location = new Location();
 
             // Map form fields to properties in the Person object
-            location.Address = form["Address"];
             location.City = form["City"];
             location.State = form["State"];
-            location.PostalCode = form["PostalCode"];
             location.Id = Convert.ToInt32(form["Id"]);
 
             return location;
