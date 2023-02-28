@@ -2,7 +2,15 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to FindUs!</h1>
+  <p class="lead">Welcome to our employee tracking website, where you can easily keep track of the location and status of your employees!</p>
+  <hr class="my-4">
+  <p>With our user-friendly platform, you'll be able to stay updated on where your employees are at any given moment, allowing for seamless communication and more efficient management.</p>
+  <p class="lead">
+    <a asp-action="Index" asp-controller="Location" class="btn btn-primary btn-lg" role="button">Manage Locations</a>
+    <a asp-action="Index" asp-controller="Engineer" class="btn btn-primary btn-lg" role="button">Manage Engineers</a>
+  </p>
 </div>
+
+
