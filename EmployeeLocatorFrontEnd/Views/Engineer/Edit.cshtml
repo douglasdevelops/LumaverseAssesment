@@ -5,9 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Edit Engineer</h1>
 
-<h4>Engineer</h4>
 <hr />
 <div class="row">
     <div class="form-group">
@@ -39,15 +38,13 @@
                 <input asp-for="@Model.Engineer.HireDate" class="form-control" />
                 <span asp-validation-for="@Model.Engineer.HireDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <p></p>
+            <div class="form-group btn-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
+                <a class="btn btn-secondary" asp-action="Index">Back to List</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

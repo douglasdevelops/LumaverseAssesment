@@ -5,15 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Create Engineer</h1>
 
-<h4>Engineer</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="@Model.Engineer.FirstName" class="control-label"></label>
                 <input asp-for="@Model.Engineer.FirstName" class="form-control" />
@@ -39,17 +38,21 @@
                 <input asp-for="@Model.Engineer.HireDate" class="form-control" />
                 <span asp-validation-for="@Model.Engineer.HireDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+            <p>
+
+            </p>
+
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button type="submit" value="Create" class="btn btn-primary">Save</button>
+                    <span style="width:15px;"></span>
+                    <a type="button" asp-action="Index" class="btn btn-secondary">Back To List</a>
+                </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }
